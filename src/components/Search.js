@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+
 const Search = ({ getSearchRequest }) => {
     
     const [text, setText] = useState("")
@@ -7,7 +8,6 @@ const Search = ({ getSearchRequest }) => {
     const onSubmit = (e) => {
         e.preventDefault()
         getSearchRequest(text)
-        setText("")
     }
     
     
@@ -22,7 +22,7 @@ const Search = ({ getSearchRequest }) => {
                     onChange={(e) => setText(e.target.value)}
                 />
             </div>
-            <input type='submit' value='Hladat' className='btn btn-block' />
+            <input type='submit' value='Hľadať' className='btn btn-block' />
         </form>
     )
 }
