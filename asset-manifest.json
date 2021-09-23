@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/avpro/static/css/main.19ac4dc9.chunk.css",
+    "main.js": "/avpro/static/js/main.0b6e064b.chunk.js",
+    "main.js.map": "/avpro/static/js/main.0b6e064b.chunk.js.map",
+    "runtime-main.js": "/avpro/static/js/runtime-main.1962243d.js",
+    "runtime-main.js.map": "/avpro/static/js/runtime-main.1962243d.js.map",
+    "static/js/2.11583885.chunk.js": "/avpro/static/js/2.11583885.chunk.js",
+    "static/js/2.11583885.chunk.js.map": "/avpro/static/js/2.11583885.chunk.js.map",
+    "static/js/3.e732f146.chunk.js": "/avpro/static/js/3.e732f146.chunk.js",
+    "static/js/3.e732f146.chunk.js.map": "/avpro/static/js/3.e732f146.chunk.js.map",
+    "index.html": "/avpro/index.html",
+    "static/css/main.19ac4dc9.chunk.css.map": "/avpro/static/css/main.19ac4dc9.chunk.css.map",
+    "static/js/2.11583885.chunk.js.LICENSE.txt": "/avpro/static/js/2.11583885.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1962243d.js",
+    "static/js/2.11583885.chunk.js",
+    "static/css/main.19ac4dc9.chunk.css",
+    "static/js/main.0b6e064b.chunk.js"
+  ]
+}
