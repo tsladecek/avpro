@@ -51,6 +51,7 @@ function App() {
       <div className="container">
         <Header/>
         <Search getSearchRequest={getSearchRequest}/>
+        {showTable && <h2>Model: {ModelIndex + 1}</h2>}
         {showTable && <TVTable model={Model[ModelIndex]}/> }
         {showTable && <Button text="Ďalej" color="green"
           onClick={NextModel} onKeyPress={handleKeypress}/> }
