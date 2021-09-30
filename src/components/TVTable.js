@@ -15,7 +15,7 @@ const TVTable = ( {model} ) => {
       <Table sx={{ minWidth: 650 }} size="small" aria-label="simple table">      
         <TableHead>
           {keys.map((k) => (
-            <TableRow>
+            <TableRow key={k}>
               <TableCell>{k}</TableCell>
               <TableCell align="right">{model[k]}</TableCell>
             </TableRow>
