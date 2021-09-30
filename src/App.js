@@ -15,6 +15,8 @@ function App() {
 
   const [Model, setModel] = useState([])
   const [showTable, setShowTable] = useState(false)
+
+  const [ValidModel, setValidModel] = useState(true)
   const [ModelsLength, setModelsLength] = useState(0)
   const [ModelIndex, setModelIndex] = useState(0)
 
@@ -25,15 +27,24 @@ function App() {
     return data
   } */
 
+  const model_list = Object.keys(tvmodels);
+
   const fetchTV = (queryModel) => {
-    return tvmodels[queryModel]
+
+    if (model_list.includes(queryModel)) {
+      setValidModel(true)
+      setShowTable(true)
+      return tvmodels[queryModel]
+    }
+    setShowTable(false)
+    setValidModel(false)
+    return {}
   }
 
   const getSearchRequest = async (queryModel) => {
     const models = await fetchTV(queryModel)
 
     setModel(models)
-    setShowTable(true)
     setModelsLength(models.length)
   }
 
@@ -61,6 +72,7 @@ function App() {
       {showTable && <TVTable model={Model[ModelIndex]} />}
       {showTable && <Button text="Ďalej" color="green"
         onClick={NextModel} onKeyPress={handleKeypress} />}
+      {!ValidModel && <h2 style={{ color: "red" }}>Model sa nenachádza v databáze</h2>}
 
     </div>
   )
