@@ -42,7 +42,7 @@ function App() {
   }
 
   const getSearchRequest = async (queryModel) => {
-    const models = await fetchTV(queryModel)
+    const models = await fetchTV(queryModel.toUpperCase())
 
     setModel(models)
     setModelsLength(models.length)
