@@ -67,7 +67,7 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <Search getSearchRequest={getSearchRequest} />
+      <Search getSearchRequest={getSearchRequest} model_list={model_list} />
       {showTable && <h2>Model: {ModelIndex + 1}</h2>}
       {showTable && <TVTable model={Model[ModelIndex]} />}
       {showTable && <Button text="Ďalej" color="green"
